@@ -33,3 +33,7 @@ Execute docker compose to build and create a docker container.
 ```
 docker-compose --build -d
 ```
+
+## Related App
+- [Profile App](https://github.com/swarawan/grpc-profile)
+- [Protos](https://github.com/swarawan/grpc-protos)
