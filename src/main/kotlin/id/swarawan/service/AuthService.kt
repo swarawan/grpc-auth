@@ -21,7 +21,7 @@ class AuthService @Autowired constructor(
 	fun login(request: LoginRequest): LoginResponse {
 		validateRequest(request)
 
-		val auth = authRepository.findCredentialByUsername(request.username)
+		val auth = authRepository.findCredentialByUsername(request.email)
 			?: throw DataNotFoundException("Data not found")
 
 		val loginResponse = LoginResponse(accessToken = UUID.randomUUID().toString())
@@ -38,7 +38,7 @@ class AuthService @Autowired constructor(
 
 	private fun validateRequest(loginRequest: LoginRequest) {
 		when {
-			loginRequest.username.isNullOrEmpty() ->
+			loginRequest.email.isNullOrEmpty() ->
 				throw AppException("Username cannot be empty")
 
 			loginRequest.password.isNullOrEmpty() ->
