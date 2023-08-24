@@ -15,9 +15,9 @@ class AuthRepository {
 
 	private fun initData(): List<Auth> {
 		return arrayListOf(
-			Auth(1, "ii", "123456"),
-			Auth(2, "eka", "123456"),
-			Auth(3, "feri", "123456")
+			Auth(1, "ii@investree.id", "123456"),
+			Auth(2, "eka@investree.id", "123456"),
+			Auth(3, "feri@investree.id", "123456")
 		)
 	}
 }

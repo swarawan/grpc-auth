@@ -1,6 +1,6 @@
 package id.swarawan.model
 
 data class LoginRequest(
-	val username: String? = null,
+	val email: String? = null,
 	val password: String? = null
 )
