@@ -1,2 +1,2 @@
 #!/bin/bash
-git clone --recurse-submoduleshttps://github.com/swarawan/grpc-protos
+git clone --recurse-submodules https://github.com/swarawan/grpc-protos
