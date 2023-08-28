@@ -16,6 +16,9 @@ Folder structure will be like this
 
 ```
 
+![Flow app](https://github.com/swarawan/grpc-auth/blob/main/image-1.png?raw=true)
+
+
 ## How to Clone
 
 There are two ways of cloning a repository contains the submodule repository.
